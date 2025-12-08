@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-area: "image1 img2 img2 img2 " "image1 img3 img4 img5";
+}
+
+#image1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  grid-area: "image1";
+}
+
+#image2 {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  grid-area: img2;
+}/*# sourceMappingURL=style.css.map */
