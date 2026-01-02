@@ -7,26 +7,38 @@ html,body{
     height: 100%;
     width: 100%;
 }
-body{
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 2fr 1fr 1fr 1fr ;
-    align-items: center;
-    justify-items: center;
-    grid-area: "image1 img2 img2 img2 "
-               "image1 img3 img4 img5"    
-    ;
 
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    // background-color: crimson;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "div1 div2 div2 div2 "
+                         "div1 div3 div4 div5 "
+                         ;
+    
 }
-#image1{
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    grid-area: "image1";
+#div1{
+    background-color: hotpink;
+    grid-area: div1;
 }
-#image2{
-    height: 100px;
-    width: 100px;
+#div2{
     background-color: yellow;
-    grid-area: img2;
+    grid-area: div2;
+}
+#div3{
+    background-color: pink;
+    grid-area: div3;
+}
+#div4{
+    background-color: saddlebrown;
+    grid-area: div4;
+}
+#div5{
+    background-color: khaki;
+    grid-area: div5;
 }
